@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: #121212;
+    color: #E0E0E0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Sørger for at main fyller tilgjengelig plass */
+}
+
+.navibar {
+    background-color: #1E1E1E;
+    padding: 10px 20px;
+}
+
+.navbari-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navi-item {
+    margin-left: 60px;
+    margin-right: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navi-item i {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.navi-item.active i {
+    color: #FF0266; /* Mørk rød farge */
+}
+
+.navi-item.active::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #FF0266; /* Samme farge som ikonet */
+    position: absolute;
+    bottom: -10px; /* Juster denne verdien for å plassere streken */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+li {
+    list-style-type: none;
+}
+
+.footerD{
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto; /* Plasserer footeren i bunnen */
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+.footer-item i {
+    color: #FFFFFF; /* Sett fargen til hvit */
+}
+
+.copyrightTekst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
