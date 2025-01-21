@@ -10,22 +10,41 @@
     <header>
         <div class="navibar">
             <ul class="navbari-nav">
-                <li class="navi-item">
+                <li class="navi-item active" data-target="profilAvdyl">
                     <a href="#"><i class="fa-solid fa-user"></i></a>
                 </li>
-                <li class="navi-item">
+                <li class="navi-item" data-target="todo-container">
                     <a href="#"><i class="fa-solid fa-industry"></i></a>
                 </li>
-                <li class="navi-item">
+                <li class="navi-item" data-target="none">
                     <a href="#"><i class="fa-solid fa-briefcase"></i></a>
                 </li>
             </ul>
         </div>
     </header>
     <main>
+        <div class="profilAvdyl">
+            <div class="profilbilde">
+                <img src="/img/Avdyl.jpg" alt="" srcset="">
+            </div>
+            <div class="beskrivelseAvdyl">
+                <h1>Avdyl Istrefovic</h1>
+                <p>Hei, jeg er en student ved Høyskolen Kristiania. Jeg studerer Frontend-utvikling. Jeg er en kreativ og engasjert person som liker å jobbe med webutvikling. Jeg har erfaring med HTML, CSS og JavaScript. Jeg har også erfaring med React og Node.js. Jeg er en person som liker å jobbe i team og er alltid klar for å lære nye ting.</p>
+            </div>
+        </div>
+
+        <div class="todo-container">
+            <h2>To-Do List</h2>
+            <div class="input-container">
+                <input type="text" id="new-task" placeholder="Add a new task...">
+                <button id="add-task-btn">Add</button>
+            </div>
+            <ul id="task-list">
+                <!-- To-do items will be added here -->
+            </ul>
+        </div>
 
     </main>
-
     <footer>
         <div class="footerD">
             <ul class="footer-nav">
@@ -40,12 +59,10 @@
                 </li>
             </ul>
             <div class="copyrightTekst">
-                &copy; 2023 Avdyl Istrefovic. Alle rettigheter reservert.
+                &copy; 2024 Avdyl Istrefovic. Alle rettigheter reservert.
             </div>
         </div>
     </footer>
-
-
     <script src="script.js"></script>
 </body>
 </html>
