@@ -13,6 +13,7 @@ main {
     justify-content: center;
     align-items: flex-start; /* Endret fra center til flex-start */
     padding-top: 30px; /* Legg til padding-top */
+    
 }
 
 .todo-container {

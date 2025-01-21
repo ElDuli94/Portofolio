@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const addTaskBtn = document.getElementById('add-task-btn');
     const newTaskInput = document.getElementById('new-task');
